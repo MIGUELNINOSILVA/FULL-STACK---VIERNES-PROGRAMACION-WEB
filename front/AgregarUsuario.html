@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimientos DESAJBGA</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Agregar Usuario</title>
+</head>
+<body>
+    <div class="encabezado">
+        <div class="titulo">
+            <div class="cont">
+            </div>
+            <div class="cont">
+                <h1>Dirección Ejecutiva Seccional De Administración Judicial Bucaramanga</h1>
+            </div>
+            <div class="cont">
+            </div>
+        </div>
+    
+        <div class="subtitulo">
+            <div class="logoescudocol">
+                <a href="https://www.ramajudicial.gov.co/" title="Ir a Rama Judicial"> <img alt="Escudo Rama Judicial" height="125" src="Imagenes/LogoEscudoCol.JPG" /></a>
+            </div>
+            <div class="subtcentro">
+                <h2>Registro de Usuario</h2>
+                <script class="Fecha">
+                    //<![CDATA[
+                    function makeArray() {
+                        for (i = 0; i < makeArray.arguments.length; i++)
+                            this[i + 1] = makeArray.arguments[i];
+                    }
+                    var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
+                        'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+                    var date = new Date();
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+                     //]]>
+                </script>
+            </div> 
+            <div>
+            </div>   
+        </div>
+        <hr>
+    <h2><center>Registro a nuevo usuario</center></h2>
+    <div class="areas"><center>
+        <form id="addUser">
+            <div class="caja-formulario">
+                <label for="">Nombre Usuario</label>
+                <input type="text" placeholder="Ingrese nombre de usuario" id="nombreUsuario">
+            </div>
+            <div class="caja-formulario">
+                <label for="">Telefono</label>
+                <input type="number" placeholder="Ingrese número de contacto" id="numeroUsuario">
+            </div>
+            <div class="caja-formulario">
+                <label for="">Cargo</label>
+                <input type="text" placeholder="Ingrese el cargo" id="cargoUsuario">
+            </div>
+            <div class="caja-formulario">
+                <label for="">Correo Electronico</label>
+                <input type="email" placeholder="Ingrese el correo electrónico">
+            </div>
+            <button class="b">Agregar</button>
+
+        </form>
+    </div>
+    <table class="table-user">
+        <thead>
+            <tr>
+                <th>Nombre Usuario</th>
+                <th>Cargo</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+
+            </tr>
+
+        </thead>
+        <tbody id="Usuarios">
+
+        </tbody>
+    </table>
+        <br>
+        <hr>  
+        
+    
+   
+<footer class="piepag">
+    Derechos Reservados DESAJ Bucaramanga
+</footer>
+    <script src="js/agregarUsuario.js" type="module"></script>
+   <script src="scrips.js" type="module"></script> 
+</body>
+</html>

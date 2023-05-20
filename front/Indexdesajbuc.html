@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimientos DESAJBGA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="encabezado">
+        <div class="titulo">
+            <div class="cont">
+            </div>
+            <div class="cont">
+                <h1>Dirección Ejecutiva Seccional De Administración Judicial Bucaramanga</h1>
+            </div class="cont">
+            <div class="cont">
+            </div>
+        </div>
+    
+        <div class="subtitulo">
+            <div class="logoescudocol">
+                <a href="https://www.ramajudicial.gov.co/" title="Ir a Rama Judicial"> <img alt="Escudo Rama Judicial" height="125" src="Imagenes/LogoEscudoCol.JPG" /></a>
+            </div>
+            <div class="subtcentro">
+                <h2>Registro de Solicitudes</h2>
+                <script class="Fecha">
+                    //<![CDATA[
+                    function makeArray() {
+                        for (i = 0; i < makeArray.arguments.length; i++)
+                            this[i + 1] = makeArray.arguments[i];
+                    }
+                    var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
+                        'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+                    var date = new Date();
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+                     //]]>
+                </script>
+            </div> 
+            <div>
+            </div>   
+        </div>
+    </div>
+<div class="contelogin">
+    <div></div>
+    <div class="cajalogin">
+        <div>
+            <p class="titulo1">Iniciar Sesión</p><hr>
+        </div>
+        <div class="login">
+            <img class="imglogin" src="Imagenes/Usuario.png" alt="usuario">
+            <input class= "inputlogin" type="text" name="Usuario" placeholder="Usuario" autocomplete="on" required><span class="validacion">*</span>
+        </div>
+        <div class="login">    
+            <img class="imglogin" src="Imagenes/Contraseña.png" alt="contraseña">
+            <input class= "inputlogin" type="password" name="password" placeholder="Password" minlength="4" maxlength="12" required><span class="validacion">*</span>
+        </div>
+        <div class="botones">
+            <a href="Iniciodesajbuc.html" class="botonRS">INGRESAR</a>
+        </div>
+    </div> 
+    <div></div>  
+</div>
+<div class="contenavega">
+    <div></div>
+    <div class="navegadores">
+        Navegadores Recomendados
+        <img width="200" src="https://procesojudicial.ramajudicial.gov.co/Justicia/imagenes/png/navegadores.png" alt="Navegadores Recomendados" />
+        DESAJ BUCARAMANGA
+    </div>
+    <div></div>
+</div>    
+<footer class="piepag">
+    Derechos Reservados DESAJ Bucaramanga
+</footer>
+
+   <script src="scrips.js"></script> 
+</body>
+</html>

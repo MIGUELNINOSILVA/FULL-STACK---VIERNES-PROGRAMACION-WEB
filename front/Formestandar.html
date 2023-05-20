@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimientos DESAJBGA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="encabezado">
+        <div class="titulo">
+            <div class="cont">
+            </div>
+            <div class="cont">
+                <h1>Dirección Ejecutiva Seccional De Administración Judicial Bucaramanga</h1>
+            </div>
+            <div class="cont">
+            </div>
+        </div>
+    
+        <div class="subtitulo">
+            <div class="logoescudocol">
+                <a href="https://www.ramajudicial.gov.co/" title="Ir a Rama Judicial"> <img alt="Escudo Rama Judicial" height="125" src="Imagenes/LogoEscudoCol.JPG" /></a>
+            </div>
+            <div class="subtcentro">
+                <h2>Registro de Solicitudes</h2>
+                <script class="Fecha">
+                    //<![CDATA[
+                    function makeArray() {
+                        for (i = 0; i < makeArray.arguments.length; i++)
+                            this[i + 1] = makeArray.arguments[i];
+                    }
+                    var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
+                        'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+                    var date = new Date();
+                    var day = date.getDate();
+                    var month = date.getMonth() + 1;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+                     //]]>
+                </script>
+            </div> 
+            <div>
+            </div>   
+        </div>
+    </div>
+        <hr>
+    <div class="infoformulario">
+        <div class="dataselect">  
+            <label for="">Grupo de Mantenimiento y Soporte Tecnologico</label>
+            <span>AREA</span>
+        </div>
+        <div class="dataselect">
+            <label for="">Hardware</label>
+            <span>CATEGORIA</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Datos del Solicitante</h3>
+
+    <div class="formulario">
+        <div class="nombresoli">
+            <label for="">Nombre del Solicitante</label>
+            <input type="text" placeholder="Ingrese Nombre del solicitante" id="nombresoli">
+        </div>
+        <div class="cedula">
+            <label for="">Cedula</label>
+            <input type="text" placeholder="Ingrese Numero de Cedula" id="cedula">
+        </div>
+        <div class="telefono">
+            <label for="">Telefono de Contacto</label>
+            <input type="text" placeholder="Ingrese Telefono de Contacto" id="telefono">
+        </div>
+
+        <div class="cargo">
+            <label for="">Cargo</label>
+            <input type="text" placeholder="Ingrese Nombre del solicitante" id="cargo">
+        </div>
+
+        <div class="departamento">
+            <label for="">Departamento</label>
+            <select name="departamento" id="departamento">
+                <option value="departamento">Seleccione el Departamento</option>
+            </select>
+        </div>
+
+        <div class="ciudad">
+            <label for="">Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="ciudad">Seleccione la Ciudad</option>
+            </select>
+        </div>
+
+        <div class="despacho">
+            <label for="">Despacho</label>
+            <select name="despcaho" id="despacho">
+                <option value="Seleccione el Despacho">Seleccione el Despacho</option>
+            </select>
+           
+        </div>
+        <div class="correoelect">
+            <label for="">Correo Electronico</label>
+            <input type="email" placeholder="Ingrese Correo Electronico Personal Institucional" id="correoelect">
+        </div>
+    </div>
+<hr>
+
+<h3>Descripcion de la Solicitud</h3>
+
+    <div class="formsolic">
+        <div class="solicitud">
+            <label for="" class="label">Descripción de la Solicitud</label>
+            <textarea name="textarea" rows="10" cols="50" id="solicitud" placeholder="Escribe su solicitud aquí"></textarea>    
+        </div>
+        <div class="adjuntos" id="adjuntos">
+            <input type="file" id="fileadjuntos" multiple>
+            <ul id="previa"></ul>
+        </div>
+    </div>
+    <br>
+    <div class="botones">
+        <a href="" class="botonRS">ENVIAR SOLICITUD</a>
+    </div>
+   
+<footer class="piepag">
+    Derechos Reservados DESAJ Bucaramanga
+</footer>
+
+   <script src="scrips.js"></script> 
+</body>
+</html>
